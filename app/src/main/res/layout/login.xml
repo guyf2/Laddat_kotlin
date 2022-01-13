@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/ladaat_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ladaat"
+                android:fontFamily="@font/roboto_font"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_marginBottom="64dp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="16dp"
+                >
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operator ID" />
+
+                <EditText
+                    android:id="@+id/operatorEditText"
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_shape"
+                    android:padding="16dp"
+                    android:hint="Enter Password"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient ID" />
+
+                <EditText
+                    android:id="@+id/patientEditText"
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_shape"
+                    android:padding="16dp"
+                    android:hint="Enter Password"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/loginSubmitButton"
+                android:fontFamily="@font/roboto_font"
+                android:layout_marginTop="16dp"
+                android:text="Get started"
+                android:background="@drawable/login_button_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/login_input_shape" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Dont have a user? "
+                    android:fontFamily="@font/roboto_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/registerLink"
+                    android:fontFamily="@font/roboto_font"
+                    android:text="Click Here"
+                    android:clickable="true"
+                    android:textColor="@color/design_default_color_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
